@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.wolf.practicaltest.MainActivity">
+
+    <EditText
+        android:id="@+id/toFeet"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_centerHorizontal="true"
+        android:hint="Inset feet"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/ToMeter"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_below="@+id/submitTofeet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Insert meter"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/submitTofeet"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toFeet"
+        android:onClick="click"
+        android:text="Feet to Meter"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/submitToMeter"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ToMeter"
+        android:onClick="click2"
+        android:text="Meter to Feet"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/submitToMeter"
+        android:layout_marginTop="24dp"
+        android:onClick="reset"
+        android:text="RESET"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textViewresults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:text="1 meter = 3.28084 feet"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>
+
